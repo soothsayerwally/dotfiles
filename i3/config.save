@@ -209,7 +209,6 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 # You can use these variables anywhere in the i3 configuration file.
 
 set $base00 #181818
-#set $base00 #FFFFFF
 set $base01 #282828
 set $base02 #383838
 set $base03 #585858
@@ -222,8 +221,7 @@ set $base09 #dc9656
 set $base0A #f7ca88
 set $base0B #a1b56c
 set $base0C #86c1b9
-#set $base0D #7cafc2
-set $base0D #56979A
+set $base0D #7cafc2
 set $base0E #ba8baf
 set $base0F #a16946
 
@@ -246,7 +244,7 @@ set $base0F #a16946
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base05 $base0D #FFFFFF $base0D $base0C
+client.focused          $base05 $base0D $base00 $base0D $base0C
 client.focused_inactive $base01 $base01 $base05 $base03 $base01
 client.unfocused        $base01 $base00 $base05 $base01 $base01
 client.urgent           $base08 $base08 $base00 $base08 $base08
@@ -265,7 +263,7 @@ bindsym $mod+shift+x exec --no-startup-id "betterlockscreen -l"
 #Custom Keybinds for launching apps
 bindsym $mod+t exec thunar
 bindsym $mod+c exec emacs
-bindsym $mod+Shift+f exec firefox
+bindsym $mod+w exec firefox
 
 
 
