@@ -59,7 +59,8 @@
 	"clock#time": {
 		"interval": 10,
 		"format": "{:%H:%M}",
-		"tooltip": false
+		"tooltip": false,
+		"timezone": "Asia/Calcutta"
 	},
 
 	"clock#date": {
@@ -99,7 +100,7 @@
 
 	"network": {
 		"interval": 5,
-		"format-wifi": " {essid} ({signalStrength}%)",
+		"format-wifi": "  {essid} ({signalStrength}%)",
 		"format-ethernet": " {ifname}",
 		"format-disconnected": "No connection",
 		"format-alt": " {ipaddr}/{cidr}",
@@ -125,7 +126,7 @@
 	},
 
 	"pulseaudio": {
-		"format": "{icon} {volume}%",
+		"format": "{icon}  {volume}%",
 		"format-bluetooth": "{icon} {volume}%",
 		"format-muted": "",
 		"format-icons": {

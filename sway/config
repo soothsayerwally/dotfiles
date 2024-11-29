@@ -23,7 +23,7 @@ set $menu dmenu_path | wmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/exordinant/Wallpapers/solarized.jpeg fill
+output * bg /home/exordinant/Wallpapers/solarized.png fill
 #
 # Example configuration:
 #
