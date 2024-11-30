@@ -261,4 +261,4 @@ bindsym $mod+Shift+m exec ncmpcpp
 include /etc/sway/config.d/*
 
 #wl-color-picker
-bindsym $mod+c exec wl-color-picker
+bindsym $mod+c exec wl-color-picker clipboard
