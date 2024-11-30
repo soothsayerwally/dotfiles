@@ -218,9 +218,10 @@ bar {
 
 # Disable Titlebar
 default_border none
-default_border pixel 4
+default_border pixel 3
 client.focused      #2AA198 #2AA198 #2AA198 #2AA198
 client.unfocused   #586e75 #586e75 #586e75 #586e75
+#client.focused     #b58900 #b58900 #b58900 #b58900
 
 
 
