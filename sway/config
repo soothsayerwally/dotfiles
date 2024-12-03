@@ -262,3 +262,6 @@ include /etc/sway/config.d/*
 
 #wl-color-picker
 bindsym $mod+c exec wl-color-picker clipboard
+
+# gaps
+gaps inner 10
