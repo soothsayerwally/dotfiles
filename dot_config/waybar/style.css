@@ -1,0 +1,138 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    color: #99AF7C;
+    background: transparent;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #5a635c;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #99AF7C;
+}
+
+#workspaces button.focused {
+    color: #99AF7C;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #141b11;
+    background: #d2f4cd;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #d2f4cd;
+    color: #141b11; 
+    border-radius: 10px;
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#workspaces,
+#tray,
+#backlight {
+    background: rgba(46, 52, 64, 1.0);
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 5px;
+    /* border: 1px solid #181825; */
+}
+
+#backlight {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: rgba(46, 52, 64, 1.0);
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#cpu {
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#memory {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: #99AF7C;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 5px;
+    border-right: 0px;
+}
+
+#network {
+    color:  #99AF7C;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+#pulseaudio {
+    color: #99AF7C;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio.microphone {
+    color: #99AF7C;
+    border-radius: 0px 10px 10px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 5px;
+}
+
+#battery {
+    color: #99AF7C;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+window#waybar.empty #window {
+    background:none;
+    }
+
+
+tooltip {
+     border-radius: 10px;
+     background-color: #2E3440;
+     color: #99AF7C;
+}
+
+#calendar {
+	color: #99AF7C;
+}
