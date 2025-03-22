@@ -46,7 +46,7 @@ if ! command -v chezmoi &> /dev/null; then
   sudo pacman -Syu --needed --noconfirm "${pacman_apps[@]}"
   install_yay
   echo "chezmoi installed. Initializing and applying dotfiles..."
-  chezmoi init --apply <your-github-repo-url>
+  chezmoi init --apply git@github.com:soothsayerwally/dotfiles.git
 else
   echo "chezmoi is already installed. Applying dotfiles..."
   chezmoi apply
