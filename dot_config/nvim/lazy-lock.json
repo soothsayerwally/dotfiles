@@ -1,0 +1,9 @@
+{
+  "conform.nvim": { "branch": "master", "commit": "f9ef25a7ef00267b7d13bfc00b0dea22d78702d5" },
+  "everforest-nvim": { "branch": "main", "commit": "135cc21a45756e688dd1a3cbeb1c80a04b569b46" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "lualine.nvim": { "branch": "master", "commit": "9fef261b53fbe3a2ef01ee9667f6fde064b1ed10" },
+  "nvim-treesitter": { "branch": "master", "commit": "20a7e40203dab3454686e057adecd805f3d6d334" },
+  "nvim-ts-autotag": { "branch": "main", "commit": "a1d526af391f6aebb25a8795cbc05351ed3620b5" },
+  "nvim-web-devicons": { "branch": "master", "commit": "4c3a5848ee0b09ecdea73adcd2a689190aeb728c" }
+}
