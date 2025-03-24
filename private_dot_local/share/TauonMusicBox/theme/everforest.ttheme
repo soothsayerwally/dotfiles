@@ -1,0 +1,92 @@
+﻿#Tauon Music Box theme file
+#Everforest by Kreetzel
+
+# PALETTE:
+# bg_dim = 30,35,38
+# bg0    = 39,46,51
+# bg1    = 46,56,60
+# bg4    = 73,81,86
+# green  = 167,192,128
+# gray1  = 133,147,137
+# gray0  = 122,132,120
+# blue   = 127,187,179
+# aqua   = 131,192,146
+# fg     = 211,198,170
+
+#-Backgrounds-----
+
+30,35,38		player background (top panel)
+46,56,60	  	playlist panel
+39,46,51		side panel
+39,46,51		bottom panel
+18,18,18        queue panel
+
+#-Playlist-------
+
+167,192,128		track line
+133,147,137		track time
+133,147,137		track index
+131,192,146		track artist
+127,187,179		album line
+
+131,192,146		track playing
+211,198,170		index playing
+127,187,179		artist playing
+127,187,179		album playing
+211,198,170		time playing
+
+73,81,86		track missing
+
+180,180,180		fav line
+39,46,51		folder line
+127,187,179		folder title
+
+127,187,179,9	playing highlight
+127,187,179,30	select highlight
+142,209,226		gallery highlight
+
+#-Menu-------------
+30,35,38        menu background
+39,46,51        menu highlight
+211,198,170     menu text
+122,132,120     menu disable text
+
+#-Bottom panel------
+
+122,132,120		buttons off
+233,233,233		buttons over
+211,198,170		buttons active
+
+167,192,128		playing time
+
+127,187,179		seek bar
+131,192,146		volume bar
+30,35,38		seek bg
+30,35,38		volume bg
+30,35,38		scroll bar
+
+133,147,137		mode off
+220,220,220		mode over
+122,132,120		mode on
+
+211,198,170		bottom title
+
+#-Top panel---------
+
+245,245,245		tab active line
+235,235,235		tab line
+24,24,24		tab background
+35,35,35		tab over
+40,40,40		tab active background
+131,192,146		music vis
+
+#-Side panel--------
+
+211,198,170		title info
+133,147,137		extra info
+167,192,128		art border
+
+#-Mini Mode---------
+
+39,46,51        mini bg
+30,35,38        mini border
