@@ -1,3 +1,5 @@
+@import "mocha.css";
+
 * {
     border: none;
     border-radius: 0;
@@ -8,7 +10,7 @@
 }
 
 window#waybar {
-    color: #99AF7C;
+    color: @green;
     background: transparent;
 }
 
@@ -19,11 +21,11 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: #99AF7C;
+    color: @green;
 }
 
 #workspaces button.focused {
-    color: #99AF7C;
+    color: @green;
     background: #eba0ac;
     border-radius: 10px;
 }
@@ -50,7 +52,7 @@ window#waybar {
 #workspaces,
 #tray,
 #backlight {
-    background: rgba(46, 52, 64, 1.0);
+    background: @base;
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 5px;
@@ -59,6 +61,7 @@ window#waybar {
 
 #backlight {
     border-radius: 10px 0px 0px 10px;
+    color: @peach;
 }
 
 #tray {
@@ -67,7 +70,7 @@ window#waybar {
 }
 
 #workspaces {
-    background: rgba(46, 52, 64, 1.0);
+    background: @base;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
@@ -77,10 +80,12 @@ window#waybar {
 #cpu {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
+    color: @red;
 }
 
 #memory {
     border-radius: 10px 0px 0px 10px;
+    color: @red;
 }
 
 #window {
@@ -90,26 +95,26 @@ window#waybar {
 }
 
 #clock {
-    color: #99AF7C;
+    color: @lavender;
     border-radius: 10px 10px 10px 10px;
     margin-left: 5px;
     border-right: 0px;
 }
 
 #network {
-    color:  #99AF7C;
+    color:  @blue;
     border-radius: 10px 0px 0px 10px;
 
 }
 
 #pulseaudio {
-    color: #99AF7C;
+    color: @yellow;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio.microphone {
-    color: #99AF7C;
+    color: @yellow;
     border-radius: 0px 10px 10px 0px;
     border-left: 0px;
     border-right: 0px;
@@ -117,7 +122,7 @@ window#waybar {
 }
 
 #battery {
-    color: #99AF7C;
+    color: @rosewater;
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
@@ -129,10 +134,10 @@ window#waybar.empty #window {
 
 tooltip {
      border-radius: 10px;
-     background-color: #2E3440;
-     color: #99AF7C;
+     background-color: @base;
+     color: @flamingo;
 }
 
 #calendar {
-	color: #99AF7C;
+	color: @green;
 }
