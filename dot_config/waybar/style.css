@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "gruv.css";
 
 * {
     border: none;
@@ -10,7 +10,7 @@
 }
 
 window#waybar {
-    color: @green;
+    color: @lgreen;
     background: transparent;
 }
 
@@ -21,11 +21,11 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: @green;
+    color: @lgreen;
 }
 
 #workspaces button.focused {
-    color: @green;
+    color: @lgreen;
     background: #eba0ac;
     border-radius: 10px;
 }
@@ -52,7 +52,7 @@ window#waybar {
 #workspaces,
 #tray,
 #backlight {
-    background: @base;
+    background: @mantle;
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 5px;
@@ -70,7 +70,7 @@ window#waybar {
 }
 
 #workspaces {
-    background: @base;
+    background: @mantle;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
@@ -80,12 +80,12 @@ window#waybar {
 #cpu {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
-    color: @red;
+    color: @lred;
 }
 
 #memory {
     border-radius: 10px 0px 0px 10px;
-    color: @red;
+    color: @lred;
 }
 
 #window {
@@ -95,26 +95,26 @@ window#waybar {
 }
 
 #clock {
-    color: @lavender;
+    color: @pink;
     border-radius: 10px 10px 10px 10px;
     margin-left: 5px;
     border-right: 0px;
 }
 
 #network {
-    color:  @blue;
+    color:  @sky;
     border-radius: 10px 0px 0px 10px;
 
 }
 
 #pulseaudio {
-    color: @yellow;
+    color: @lyellow;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio.microphone {
-    color: @yellow;
+    color: @lyellow;
     border-radius: 0px 10px 10px 0px;
     border-left: 0px;
     border-right: 0px;
@@ -122,7 +122,7 @@ window#waybar {
 }
 
 #battery {
-    color: @rosewater;
+    color: @laqua;
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
@@ -134,10 +134,10 @@ window#waybar.empty #window {
 
 tooltip {
      border-radius: 10px;
-     background-color: @base;
-     color: @flamingo;
+     background-color: @mantle;
+     color: @sky;
 }
 
 #calendar {
-	color: @green;
+	color: @lgreen;
 }
