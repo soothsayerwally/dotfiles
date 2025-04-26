@@ -12,13 +12,13 @@ To get started, you'll need to clone the repository and install the required pac
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dotfiles.git
+git clone https://github.com/soothsayerwally/dotfiles.git
 
 # Change into the scripts directory
 cd dotfiles/scripts
 
 # Run the install script with sudo to install required packages (plus a few things that I need, feel free to edit those out)
-sudo ./install-packages.sh
+sudo ./install_packages.sh
 
 ```
 
