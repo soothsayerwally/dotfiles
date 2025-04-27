@@ -1,26 +1,30 @@
-*
+/*
 
-!.assets/*
+!.assets/
 
+!.config/
 .config/*
-!/.config/dunst/*
-!/.config/picom/*
-!/.config/redshift/*
-!/.config/suckless/*
+!/.config/dunst/
+!/.config/picom/
+!/.config/redshift/
+!/.config/suckless/
 
 !/.doom.d/*
 
 !/.icons/*
 
+!/.local/
 .local/*
-!/.local/share/fonts/*
+!/.local/share/
+.local/share/*
+!.local/share/fonts/
 
-!/scripts
+!/scripts/
 
-!/.bashrc
-!/.fehbg
-!/.stow-local-ignore
-!/.xinitrc
-!/.Xresources
-!/README.md
-!/.gitignore
+!.bashrc
+!.fehbg
+!.stow-local-ignore
+!.xinitrc
+!.Xresources
+!README.md
+!.gitignore
