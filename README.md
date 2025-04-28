@@ -48,7 +48,7 @@ sudo make clean install
 
 ## How it looks
 
-![](.assets/1.png)
+![](.assets/11.png)
 
-![](.assets/2.png)
+![](.assets/22.png)
 
