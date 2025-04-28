@@ -16,11 +16,11 @@ volume="$(pactl list sinks | grep -A 7 "$(pactl info | grep 'Default Sink' | cut
 mute="$(pactl list sinks | grep -A 7 "$(pactl info | grep 'Default Sink' | cut -d' ' -f 3)" | grep Mute | awk '{print $2}')"
 if [[ $volume == 0 || "$mute" == "yes" ]]; then
     # Show the sound muted notification
-    dunstify -t 1000 -a "changeVolume" -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "Volume muted" 
+    dunstify -t 1000 -a "changeVolume" -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "  Volume muted" 
 else
     # Show the volume notification
     dunstify -t 1000 -a "changeVolume" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \
-    -h int:value:"$volume" "Volume: ${volume}" -h string:hlcolor:#fbf1c7
+    -h int:value:"$volume" "󰕾  Volume: ${volume}" -h string:hlcolor:#fbf1c7
 fi
 
 
