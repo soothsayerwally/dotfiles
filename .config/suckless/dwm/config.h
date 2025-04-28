@@ -102,7 +102,6 @@ static const Key keys[] = {
         { 0, XF86XK_MonBrightnessUp,   spawn, SHCMD("~/.config/dunst/scripts/dunst-bright-up.sh") },
         { 0, XF86XK_MonBrightnessDown, spawn, SHCMD("~/.config/dunst/scripts/dunst-bright-down.sh") },
         { MODKEY|ShiftMask,  XK_q,     spawn,    SHCMD("sh ~/.config/suckless/dmenu/scripts/powermenu.sh") },
-        { MODKEY|ShiftMask,  XK_w,     spawn,    SHCMD("sudo sh ~/.config/suckless/dmenu/scripts/dmenu_wifi.sh") },
         { MODKEY, XK_f, togglefullscr, {0} },
 	{ MODKEY,	     XK_p,     spawn,	 SHCMD("echo '{\"command\": [\"cycle\", \"pause\"]}' | socat - /tmp/mpvsocket") },
 	{ MODKEY,	     XK_s,     spawn,     SHCMD("scrot '%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/Pictures/Screenshots/'") },
