@@ -64,6 +64,7 @@ xrdb -merge ~/.Xresources
 picom --config ~/.config/picom/picom.conf &
 unclutter &
 dunst &
+/home/exordinant/.dropbox-dist/dropboxd &
 
 exec dbus-run-session -- dwm
 
