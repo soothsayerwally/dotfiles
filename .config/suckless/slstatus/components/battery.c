@@ -56,10 +56,10 @@
 			char *state;
 			char *symbol;
 		} map[] = {
-			{ "Charging",    "+" },
-			{ "Discharging", "-" },
-			{ "Full",        "O" },
-			{ "Not charging", "0" },
+			{ "Charging",    "󰂄" },
+			{ "Discharging", "󰂌" },
+			{ "Full",        "󱟢" },
+			{ "Not charging", "󰁹" },
 		};
 		size_t i;
 		char path[PATH_MAX], state[12];
