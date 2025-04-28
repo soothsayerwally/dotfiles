@@ -96,9 +96,9 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ 0, XF86XK_AudioLowerVolume, spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5%") },
-        { 0, XF86XK_AudioRaiseVolume, spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%") },
-        { 0, XF86XK_AudioMute,        spawn, SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle") },
+	{ 0, XF86XK_AudioLowerVolume, spawn, SHCMD("~/.config/dunst/scripts/dunst-volume.sh -5%") },
+        { 0, XF86XK_AudioRaiseVolume, spawn, SHCMD("~/.config/dunst/scripts/dunst-volume.sh +5%") },
+        { 0, XF86XK_AudioMute,        spawn, SHCMD("~/.config/dunst/scripts/dunst-volume.sh toggle") },
         { 0, XF86XK_MonBrightnessUp,   spawn, SHCMD("brightnessctl set +10%") },
         { 0, XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl set 10%-") },
         { MODKEY|ShiftMask,  XK_q,     spawn,    SHCMD("sh ~/.config/suckless/dmenu/scripts/powermenu.sh") },

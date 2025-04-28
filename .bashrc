@@ -8,4 +8,4 @@ PS1='[\u@\h \W]\$ '
 
 export LS_COLORS="$(echo $LS_COLORS | sed -E 's/;4[0-7]//g')"
 
-
+alias emacs="emacs -nw"
