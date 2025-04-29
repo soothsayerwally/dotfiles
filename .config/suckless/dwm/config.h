@@ -96,11 +96,11 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
+	{ 0, XF86XK_MonBrightnessUp, spawn, SHCMD("~/.config/dunst/scripts/dunst-bright.sh") },
+	{ 0, XF86XK_MonBrightnessDown, spawn, SHCMD("~/.config/dunst/scripts/dunst-bright.sh") },
 	{ 0, XF86XK_AudioLowerVolume, spawn, SHCMD("~/.config/dunst/scripts/dunst-volume.sh -5%") },
         { 0, XF86XK_AudioRaiseVolume, spawn, SHCMD("~/.config/dunst/scripts/dunst-volume.sh +5%") },
         { 0, XF86XK_AudioMute,        spawn, SHCMD("~/.config/dunst/scripts/dunst-volume.sh toggle") },
-        { 0, XF86XK_MonBrightnessUp,   spawn, SHCMD("~/.config/dunst/scripts/dunst-bright-up.sh") },
-        { 0, XF86XK_MonBrightnessDown, spawn, SHCMD("~/.config/dunst/scripts/dunst-bright-down.sh") },
         { MODKEY|ShiftMask,  XK_q,     spawn,    SHCMD("sh ~/.config/suckless/dmenu/scripts/powermenu.sh") },
         { MODKEY, XK_f, togglefullscr, {0} },
 	{ MODKEY,	     XK_p,     spawn,	 SHCMD("echo '{\"command\": [\"cycle\", \"pause\"]}' | socat - /tmp/mpvsocket") },
