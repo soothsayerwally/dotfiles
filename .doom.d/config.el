@@ -111,5 +111,9 @@
       :desc "Open JEE Checklist file"
       "o j" (lambda () (interactive) (find-file "~/Documents/org/jee_checklist.org")))
 
+(map! :leader
+      :desc "Open THISWEEK file"
+      "o t" (lambda () (interactive) (find-file "~/Documents/org/thisweek.org")))
+
 ;; Automatically add CLOSED timestamp when marking TODO as DONE
 (setq org-log-done 'time)
