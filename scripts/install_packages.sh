@@ -50,7 +50,7 @@ xbps-install -y firefox mpv yt-dlp
 xbps-install -y brightnessctl redshift
 
 # Stuff
-xbps-install -y emacs-x11 elogind polkit
+xbps-install -y emacs-x11 elogind polkit mesa
 
 # Final note
 echo "Done! Reboot recommended. Don't forget to enable services (tlp, iwd, chronyd)."
