@@ -86,6 +86,18 @@
     };
   };
 
+  # Hide stupid desktop files
+  xdg.desktopEntries = {
+    "cups" = {
+      name = "Manage Printing";
+      noDisplay = true;
+    };
+    "nvim" = {
+      name = "Neovim Wrapper";
+      noDisplay = true;
+    };
+  }; 
+
   # Do NOT change this after initial installation!
   home.stateVersion = "26.05";
 
