@@ -74,6 +74,18 @@
     terminal = "ptyxis";
   };
 
+  # Hide stupid desktop files
+  xdg.desktopEntries = {
+    "cups" = {
+      name = "Manage Printing";
+      noDisplay = true;
+    };
+    "nvim" = {
+      name = "Neovim Wrapper";
+      noDisplay = true;
+    };
+  }; 
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "26.05";
 }
