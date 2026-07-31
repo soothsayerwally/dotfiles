@@ -21,6 +21,10 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  # Enable TRIM
+  services.fstrim.enable = true;
+  services.fstrim.interval = "weekly";
+
   # GNOME Desktop
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
