@@ -59,13 +59,21 @@
   ];
 
   # Gnome stuff
-  environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs epiphany totem gnome-music xterm ];
-  hardware.sensor.iio.enable = true;
+  environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs epiphany showtime yelp gnome-music xterm ];
+  hardware.sensor.iio.enable = true; # Enable auto rotate
   qt = {
     enable = true;
     platformTheme = "gnome";
     style = "adwaita-dark";
   };
+
+  programs.nautilus-open-any-terminal = {
+    enable = true;
+    terminal = "ptyxis";
+  };
+
+  # Load Python extensions via the nautilus-python extension
+  environment.pathsToLink = [ "/share/nautilus-python/extensions" ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "26.05";

@@ -8,7 +8,7 @@
     fastfetch
     ripgrep
     htop
-    ghostty
+    ptyxis
   ];
 
   # Basic Git configuration managed by Home Manager
