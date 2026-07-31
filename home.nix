@@ -30,24 +30,16 @@
     };
   };
 
-  # Do NOT change this after initial installation!
-  home.stateVersion = "26.05";
 
   # GNOME stuff
   dconf.enable = true;
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       accent-color = "slate";
+      color-scheme = "prefer-dark";
     };
     "org/gnome/desktop/input-sources" = {
       xkb-options = [ "caps:escape" ];
-    };
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
-    };
-    "com/github/stunkymonkey/nautilus-open-any-terminal" = {
-      terminal = "ptyxis";
-      keybindings = "<Control><Alt>t"; 
     };
   };
 
@@ -93,5 +85,9 @@
       };
     };
   };
+
+  # Do NOT change this after initial installation!
+  home.stateVersion = "26.05";
+
 }
 
