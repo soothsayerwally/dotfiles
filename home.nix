@@ -41,6 +41,17 @@
     "org/gnome/desktop/input-sources" = {
       xkb-options = [ "caps:escape" ];
     };
+    "org/gnome/settings-daemon/plugins/color" = {
+      night-light-enabled = true;
+      night-light-schedule-automatic = false; 
+    
+      # Timings are calculated in minutes from midnight:
+      # 20:00 = (20 * 60) = 1200
+      night-light-schedule-from = 1200.0; 
+    
+      # 06:00 = (6 * 60) = 360
+      night-light-schedule-to = 360.0;    
+    };
   };
 
   gtk = {
