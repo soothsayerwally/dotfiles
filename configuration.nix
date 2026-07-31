@@ -61,7 +61,7 @@
   ];
 
   # Gnome stuff
-  environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs epiphany showtime yelp gnome-music xterm gnome-terminal ];
+  environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs epiphany showtime yelp gnome-music xterm gnome-console ];
   hardware.sensor.iio.enable = true; # Enable auto rotate
   qt = {
     enable = true;
