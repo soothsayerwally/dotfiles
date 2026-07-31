@@ -7,7 +7,6 @@
     neovim
     fastfetch
     ripgrep
-    htop
   ];
 
   # Basic Git configuration managed by Home Manager
