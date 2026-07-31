@@ -8,7 +8,6 @@
     fastfetch
     ripgrep
     htop
-    ptyxis
   ];
 
   # Basic Git configuration managed by Home Manager
@@ -45,6 +44,10 @@
     };
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
+    };
+    "com/github/stunkymonkey/nautilus-open-any-terminal" = {
+      terminal = "ptyxis";
+      keybindings = "<Control><Alt>t"; 
     };
   };
 
