@@ -14,6 +14,9 @@
   home.packages = with pkgs; [
     fastfetch
     ripgrep
+    fzf
+    obsidian
+    superfile
   ];
 
   home.username = "krishang";
