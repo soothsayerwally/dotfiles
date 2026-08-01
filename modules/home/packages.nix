@@ -6,6 +6,7 @@
     fzf
     obsidian
     superfile
+    tree
   ];
 }
   
