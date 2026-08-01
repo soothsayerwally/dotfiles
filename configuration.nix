@@ -60,8 +60,7 @@
   environment.systemPackages = with pkgs; [
     wl-clipboard
     gnome-tweaks
-    ptyxis
-    nautilus-python
+    nautilus-python # Required for ghostty nautilus integration
   ];
 
   # Gnome stuff
