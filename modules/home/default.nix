@@ -17,6 +17,7 @@
     fzf
     obsidian
     superfile
+    valent
   ];
 
   home.username = "krishang";
