@@ -73,11 +73,6 @@
     style = "adwaita-dark";
   };
 
-  programs.nautilus-open-any-terminal = {
-    enable = true;
-    terminal = "ghostty";
-  };
-
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "26.05";
 }
