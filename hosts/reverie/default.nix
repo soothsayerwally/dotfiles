@@ -4,6 +4,7 @@
     ./users.nix
     ../../modules/system/core.nix
     ../../modules/system/gnome-desktop.nix
+    ../../modules/home/gnome/extensions.nix
   ];
 
   networking.hostName = "reverie";
