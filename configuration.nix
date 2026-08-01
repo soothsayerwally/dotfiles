@@ -75,7 +75,7 @@
 
   programs.nautilus-open-any-terminal = {
     enable = true;
-    terminal = "ptyxis";
+    terminal = "ghostty";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

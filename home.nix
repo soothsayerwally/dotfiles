@@ -98,6 +98,13 @@
     };
   }; 
 
+  programs.ghostty = {
+    enable = true;
+    settings = {
+      theme = "catppuccin-mocha";
+    };
+  };
+
   # Do NOT change this after initial installation!
   home.stateVersion = "26.05";
 
