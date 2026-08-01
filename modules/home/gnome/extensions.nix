@@ -1,5 +1,5 @@
 { pkgs, ... }: {
- home.packages = with pkgs.gnomeExtensions; [
+ environment.systemPackages = with pkgs.gnomeExtensions; [
     gsconnect
     hot-edge
   ]; 

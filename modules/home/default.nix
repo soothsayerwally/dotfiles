@@ -10,6 +10,7 @@
     ./gnome/gnome-dconf.nix
     ./gnome/gtk-theme.nix
     ./gnome/extensions.nix
+    ./packages.nix
   ];
 
   home.username = "krishang";
