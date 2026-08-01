@@ -1,3 +1,4 @@
+
 { pkgs, ... }: {
   imports = [
     ./programs/neovim.nix
@@ -6,8 +7,9 @@
     ./programs/cups.nix
     ./programs/git.nix
     ./programs/firefox.nix
-    ./desktop/gnome-dconf.nix
-    ./desktop/gtk-theme.nix
+    ./gnome/gnome-dconf.nix
+    ./gnome/gtk-theme.nix
+    ./gnome/extensions.nix
   ];
 
   home.username = "krishang";
