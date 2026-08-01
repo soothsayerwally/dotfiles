@@ -9,6 +9,9 @@
     "org/gnome/desktop/input-sources" = {
       xkb-options = [ "caps:escape" ];
     };
+    "org/gnome/desktop/wm/preferences" = {
+      button-layout = "appmenu:minimize,maximize,close";
+    };
     "org/gnome/settings-daemon/plugins/media-keys" = {
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
