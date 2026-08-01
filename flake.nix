@@ -1,5 +1,5 @@
 {
-  description = "Reverie NixOS + Home Manager Setup";
+  description = "Krishang's Pretty Neat Flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -17,8 +17,7 @@
     nixosConfigurations.reverie = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./hardware-configuration.nix
-        ./configuration.nix
+        ./hosts/reverie
 
 	# Disko
 	disko.nixosModules.disko
@@ -30,7 +29,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 	  home-manager.backupFileExtension = "backup";
-          home-manager.users.krishang = import ./home.nix;
+          home-manager.users.krishang = import ./modules/home;
         }
       ];
     };
