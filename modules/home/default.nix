@@ -10,15 +10,6 @@
     ./desktop/gtk-theme.nix
   ];
 
-  # User-specific packages
-  home.packages = with pkgs; [
-    fastfetch
-    ripgrep
-    fzf
-    obsidian
-    superfile
-  ];
-
   home.username = "krishang";
   home.homeDirectory = "/home/krishang";
 
