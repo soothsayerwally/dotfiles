@@ -102,7 +102,6 @@
     enable = true;
     package = pkgs.ghostty;
     settings = {
-      theme = "catppuccin-mocha";
     };
   };
 
