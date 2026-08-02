@@ -9,6 +9,7 @@
     tree
     discord
     bitwarden-desktop
+    brightnessctl
   ];
 }
   
