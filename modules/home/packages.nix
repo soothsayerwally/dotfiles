@@ -8,6 +8,7 @@
     superfile
     tree
     discord
+    bitwarden-desktop
   ];
 }
   
