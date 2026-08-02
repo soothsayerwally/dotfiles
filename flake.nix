@@ -11,11 +11,19 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, disko, home-manager, ... }: {
+  outputs = { self, nixpkgs, disko, home-manager, ... }@inputs: {
     nixosConfigurations.reverie = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+
+      # Pass 'inputs' to top-level nixos modules, whatever that means
+      specialArgs = { inherit inputs; };
+
       modules = [
         ./hosts/reverie
 
@@ -29,6 +37,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 	  home-manager.backupFileExtension = "backup";
+	  home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users.krishang = import ./modules/home;
         }
       ];

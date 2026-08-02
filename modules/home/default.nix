@@ -1,7 +1,7 @@
-
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   imports = [
     ./programs/neovim.nix
+    inputs.nixvim.homeModules.nixvim
     ./programs/ghostty.nix
     ./programs/bash.nix
     ./programs/cups.nix
