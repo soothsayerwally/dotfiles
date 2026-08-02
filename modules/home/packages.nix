@@ -7,6 +7,7 @@
     obsidian
     superfile
     tree
+    discord
   ];
 }
   
