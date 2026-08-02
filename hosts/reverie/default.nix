@@ -6,6 +6,7 @@
     ../../modules/system/gnome-desktop.nix
     ../../modules/system/gnome-extensions.nix
     ../../modules/system/programs/syncthing.nix
+    ../../modules/system/programs/steam.nix
   ];
 
   networking.hostName = "reverie";
