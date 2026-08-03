@@ -11,6 +11,7 @@
     ./gnome/gnome-dconf.nix
     ./gnome/gtk-theme.nix
     ./packages.nix
+    ./assets/fonts.nix
   ];
 
   home.username = "krishang";
