@@ -7,7 +7,7 @@
     plugins = [
     { name = "fzf-fish"; src = pkgs.fishPlugins.fzf.src; } 
     { name = "colored-man-pages"; src = pkgs.fishPlugins.colored-man-pages.src; }
-    { name = "tide"; src = pkgs.fishPlugins.tide.src; }
+    { name = "pure"; src = pkgs.fishPlugins.pure.src; }
     { name = "done"; src = pkgs.fishPlugins.done.src; }
     ];
   };
