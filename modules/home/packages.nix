@@ -13,6 +13,7 @@
     varia
     amberol
     nicotine-plus
+    fd
   ];
 }
   

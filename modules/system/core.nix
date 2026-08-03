@@ -21,6 +21,7 @@
     wl-clipboard
     gnome-tweaks
     nautilus-python # Required for ghostty nautilus integration
+    grc
   ];
 
   programs.fish.enable = true;
