@@ -3,6 +3,7 @@
     isNormalUser = true;
     description = "Krishang";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.fish;
   };
 }
 

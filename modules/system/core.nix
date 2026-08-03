@@ -22,4 +22,6 @@
     gnome-tweaks
     nautilus-python # Required for ghostty nautilus integration
   ];
+
+  programs.fish.enable = true;
 }
