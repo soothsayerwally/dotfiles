@@ -7,6 +7,7 @@
     ./programs/cups.nix
     ./programs/git.nix
     ./programs/firefox.nix
+    ./programs/fish.nix
     ./gnome/gnome-dconf.nix
     ./gnome/gtk-theme.nix
     ./packages.nix
