@@ -9,7 +9,7 @@
     enable = true;
     defaultEditor = true;
     nixpkgs.useGlobalPackages = true;
-    colorschemes.gruvbox.enable = true;
+    colorschemes.gruvbox-material.enable = true;
 
     plugins.lualine.enable = true;
     plugins.mini-pairs.enable = true;

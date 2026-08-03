@@ -2,6 +2,8 @@
   programs.ghostty = {
     enable = true;
     package = pkgs.ghostty;
-    settings = {};
+    settings = {
+      theme = "Gruvbox Material Dark";
+    };
   };
 }
