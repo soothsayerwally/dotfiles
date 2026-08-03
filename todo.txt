@@ -1,0 +1,2 @@
+- configure neovim, make it default
+- configure zsh, autocomplete, aliases, etc

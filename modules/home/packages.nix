@@ -10,6 +10,9 @@
     discord
     bitwarden-desktop
     brightnessctl
+    varia
+    amberol
+    nicotine-plus
   ];
 }
   
