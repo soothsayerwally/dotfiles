@@ -14,6 +14,7 @@
     amberol
     nicotine-plus
     fd
+    reaper
   ];
 }
   
