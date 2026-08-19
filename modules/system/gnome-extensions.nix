@@ -4,5 +4,7 @@
     hot-edge
     caffeine
     appindicator
+    blur-my-shell
+    dash-to-dock
   ]; 
 }
