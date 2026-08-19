@@ -26,6 +26,18 @@
     LC_TELEPHONE = "en_IN";
     LC_TIME = "en_IN";
   };
+
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    libsecret
+    glib
+    stdenv.cc.cc
+    alsa-lib
+    freetype
+    curl
+    libGL
+  ];
+
   
   # DO NOT CHANGE ABORT ABORT
   system.stateVersion = "26.05";
