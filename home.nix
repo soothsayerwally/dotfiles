@@ -27,18 +27,27 @@
   };
 
 # Zen Browser
-programs.zen-browser = {
-  enable = true;
-  setAsDefaultBrowser = true;
+  programs.zen-browser = {
+    enable = true;
+    setAsDefaultBrowser = true;
 
-  nativeMessagingHosts = [
-    pkgs.firefoxpwa
-  ];
-};
+    nativeMessagingHosts = [
+      pkgs.firefoxpwa
+    ];
+  };
 
 # Ptyxis (Terminal)
   programs.ptyxis = {
     enable = true;
+  };
+  
+# GTK theme
+  gtk = {
+    enable = true;
+    theme = {
+      name = "adw-gtk3";
+      package = pkgs.adw-gtk3;
+    };
   };
 
 # Firefox

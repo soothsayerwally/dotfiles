@@ -60,12 +60,22 @@
     vim
     wget
     curl
-  ];
+  ] ++ (with pkgs.gnomeExtensions; [
+    hot-edge
+    caffeine
+  ]);
   
   # Enable the Nautilus "Open Any Terminal" extension globally
   programs.nautilus-open-any-terminal = {
     enable = true;
     terminal = "ptyxis"; 
+  };
+  
+  # QT Platform integration
+  qt = {
+    enable = true;
+    platformTheme = "gnome";
+    style = "adwaita-dark";
   };
 
   system.stateVersion = "26.05";
