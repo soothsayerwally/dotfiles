@@ -15,6 +15,10 @@
       home-manager.follows = "home-manager";
       };
     };
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, disko, home-manager, ... }@inputs: {

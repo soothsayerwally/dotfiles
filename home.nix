@@ -4,6 +4,7 @@
 {
   imports = [
     inputs.zen-browser.homeModules.beta
+    inputs.nixvim.homeModules.nixvim
   ];
 
   home.username = "krishang";
@@ -15,7 +16,6 @@
     btop
     ripgrep
     fd
-    neovim
     ptyxis	
     bitwarden-desktop
   ];
