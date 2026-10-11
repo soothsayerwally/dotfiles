@@ -121,4 +121,12 @@
       name = "open-file-manager";
     };
   };
+
+# Configure ssh to use https ports for git
+  programs.ssh.matchBlocks = {
+    "github.com" = {
+      hostname = "ssh.github.com";
+      port = 443;
+    };
+  };
 }
