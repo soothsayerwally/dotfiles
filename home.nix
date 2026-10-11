@@ -66,11 +66,11 @@
       }
       {
       	name = "pure";
-	src = fishPlugins.pure.src;
+	src = pkgs.fishPlugins.pure.src;
       }
       {
       	name = "done";
-	src = fishPlugins.done.src;
+	src = pkgs.fishPlugins.done.src;
       }
     ];
   };
