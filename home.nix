@@ -17,6 +17,7 @@
     ripgrep
     fd
     ptyxis	
+    fish
     bitwarden-desktop
   ];
 
@@ -34,6 +35,43 @@
 
     nativeMessagingHosts = [
       pkgs.firefoxpwa
+    ];
+  };
+
+# Fish
+  programs.fish = {
+    enable = true;
+    
+    # shell aliases
+    shellAliases = {
+      l = "ls -la";
+      g = "git";
+      v = "nvim";
+    };
+
+    # Run code on interactive shell initialization
+    interactiveShellInit = ''
+      set -g fish_greeting "" # Disable greeting
+    '';
+
+    # Install Fish plugins from nixpkgs
+    plugins = [
+      {
+        name = "fzf-fish";
+        src = pkgs.fishPlugins.fzf-fish.src;
+      }
+      {
+        name = "hydro";
+        src = pkgs.fishPlugins.hydro.src;
+      }
+      {
+      	name = "pure";
+	src = fishPlugins.pure.src;
+      }
+      {
+      	name = "done";
+	src = fishPlugins.done.src;
+      }
     ];
   };
 
@@ -155,6 +193,7 @@
     "github.com" = {
       hostname = "ssh.github.com";
       port = 443;
+      user = "git";
     };
   };
 }
