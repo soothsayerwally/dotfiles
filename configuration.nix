@@ -65,6 +65,7 @@
     git
     vim
     wget
+    gnome-extension-manager
     cloudflare-warp
     curl
   ] ++ (with pkgs.gnomeExtensions; [
