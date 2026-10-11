@@ -61,6 +61,7 @@
     description = "Krishang";
     extraGroups = [ "wheel" "networkmanager" ];
     initialPassword = "12345"; # Change this immediately after login
+    shell = pkgs.fish;
   };
 
   # Enable cloudflare-warp service
@@ -85,6 +86,8 @@
     enable = true;
     terminal = "ptyxis"; 
   };
+
+  programs.fish.enable = true;
   
   # QT Platform integration
   qt = {

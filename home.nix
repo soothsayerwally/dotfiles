@@ -17,7 +17,6 @@
     ripgrep
     fd
     ptyxis	
-    fish
     bitwarden-desktop
   ];
 
