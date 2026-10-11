@@ -13,6 +13,9 @@
 
   time.timeZone = "Asia/Kolkata"; 
   i18n.defaultLocale = "en_US.UTF-8";
+
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
   
   # Sensor support (auto-rotate)
   hardware.sensor.iio.enable = true;
