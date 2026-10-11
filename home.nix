@@ -18,6 +18,8 @@
     fd
     ptyxis	
     bitwarden-desktop
+    obsidian
+    calibre
   ];
 
 # Git 
