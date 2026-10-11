@@ -96,5 +96,31 @@
     style = "adwaita-dark";
   };
 
+  # Steam
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports for Source Dedicated Server hosting
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
+    extraPackages = with pkgs; [
+      adwaita-icon-theme
+    ];
+  };
+
+  programs.gamemode.enable = true;
+
+  # Syncthing
+  services.syncthing = {
+    enable = true;
+    openDefaultPorts = true; # Open ports in the firewall for Syncthing. (!NOTE: this will not open syncthing gui port)
+    user = "krishang";
+    configDir = "/home/krishang/.config/syncthing";
+  };
+}
+
+
+
   system.stateVersion = "26.05";
 }

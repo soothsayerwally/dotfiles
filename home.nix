@@ -99,7 +99,7 @@
     enable = true;
     defaultEditor = true;
     nixpkgs.useGlobalPackages = true;
-    colorschemes.gruvbox-material.enable = true;
+    colorschemes.everforest.enable = true;
 
     plugins.lualine.enable = true;
     plugins.mini-pairs.enable = true;
