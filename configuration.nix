@@ -118,8 +118,6 @@
     user = "krishang";
     configDir = "/home/krishang/.config/syncthing";
   };
-}
-
 
 
   system.stateVersion = "26.05";
