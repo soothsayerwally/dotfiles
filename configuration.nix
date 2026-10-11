@@ -13,6 +13,9 @@
 
   time.timeZone = "Asia/Kolkata"; 
   i18n.defaultLocale = "en_US.UTF-8";
+  
+  # Sensor support (auto-rotate)
+  hardware.sensor.iio.enable = true;
 
   # Enable GNOME
   services.xserver.enable = true;
@@ -23,7 +26,12 @@
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour
     epiphany
-    totem
+    gnome-user-docs
+    gnome-console
+    xterm
+    gnome-music
+    yelp
+    showtime
   ];
 
   services.printing.enable = true;
