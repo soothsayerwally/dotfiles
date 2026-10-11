@@ -19,7 +19,7 @@
   
   # Enable TRIM
   services.fstrim.enable = true;
-  services.fstrim.interval = "weekly"
+  services.fstrim.interval = "weekly";
 
   # Enable GNOME
   services.xserver.enable = true;
