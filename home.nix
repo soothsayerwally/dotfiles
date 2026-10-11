@@ -20,6 +20,7 @@
     bitwarden-desktop
     obsidian
     calibre
+    vesktop
   ];
 
 # Git 
