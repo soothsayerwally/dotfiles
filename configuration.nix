@@ -55,10 +55,14 @@
     initialPassword = "12345"; # Change this immediately after login
   };
 
+  # Enable cloudflare-warp service
+  services.cloudflare-warp.enable = true;
+
   environment.systemPackages = with pkgs; [
     git
     vim
     wget
+    cloudflare-warp
     curl
   ] ++ (with pkgs.gnomeExtensions; [
     hot-edge
