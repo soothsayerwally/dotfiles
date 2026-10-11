@@ -41,6 +41,11 @@
     showtime
   ];
 
+  # Fonts
+  fonts.packages = with pkgs; [
+    nerd-fonts.adwaita-mono
+  ];
+
   services.printing.enable = true;
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -69,6 +74,7 @@
     cloudflare-warp
     morewaita-icon-theme
     curl
+    devenv
   ] ++ (with pkgs.gnomeExtensions; [
     hot-edge
     caffeine
