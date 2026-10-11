@@ -1,6 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
+
 
 {
+  imports = [
+    inputs.zen-browser.homeModules.twilight
+  ];
+
   home.username = "krishang";
   home.homeDirectory = "/home/krishang";
   home.stateVersion = "26.05";
@@ -21,15 +26,14 @@
   };
 
 # Zen Browser
-  programs.zen-browser = {
-    enable = true;
-    setAsDefaultBrowser = true;
-    };
+programs.zen-browser = {
+  enable = true;
+  setAsDefaultBrowser = true;
 
-  programs.zen-browser.nativeMessagingHosts = [
+  nativeMessagingHosts = [
     pkgs.firefoxpwa
-    # ... more
   ];
+};
 
 # Firefox
   programs.firefox = {

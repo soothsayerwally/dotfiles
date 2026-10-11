@@ -8,11 +8,13 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
+      url = "github:0xc000022070/zen-browser-flake";		
       inputs = {
       # IMPORTANT: To ensure compatibility with the latest Firefox version, use nixpkgs-unstable.
       nixpkgs.follows = "nixpkgs";
       home-manager.follows = "home-manager";
+      };
+    };
   };
 
   outputs = { self, nixpkgs, disko, home-manager, ... }@inputs: {
@@ -26,6 +28,11 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          
+          home-manager.extraSpecialArgs = {
+            inherit inputs;
+          };
+          
           home-manager.users.krishang = import ./home.nix;
         }
       ];
