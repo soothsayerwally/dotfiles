@@ -67,6 +67,7 @@
     wget
     gnome-extension-manager
     cloudflare-warp
+    morewaita-icon-theme
     curl
   ] ++ (with pkgs.gnomeExtensions; [
     hot-edge
