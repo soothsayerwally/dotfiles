@@ -49,6 +49,12 @@
     wget
     curl
   ];
+  
+  # Enable the Nautilus "Open Any Terminal" extension globally
+  programs.nautilus-open-any-terminal = {
+    enable = true;
+    terminal = "ptyxis"; 
+  };
 
   system.stateVersion = "26.05";
 }

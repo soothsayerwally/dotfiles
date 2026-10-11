@@ -3,7 +3,7 @@
 
 {
   imports = [
-    inputs.zen-browser.homeModules.twilight
+    inputs.zen-browser.homeModules.beta
   ];
 
   home.username = "krishang";
@@ -16,6 +16,7 @@
     ripgrep
     fd
     neovim
+    ptyxis	
   ];
 
 # Git 
@@ -34,6 +35,11 @@ programs.zen-browser = {
     pkgs.firefoxpwa
   ];
 };
+
+# Ptyxis (Terminal)
+  programs.ptyxis = {
+    enable = true;
+  };
 
 # Firefox
   programs.firefox = {
@@ -67,6 +73,38 @@ programs.zen-browser = {
         "browser.newtabpage.enabled" = false;
         "browser.newtabpage.activity-stream.enabled" = false;
       };
+    };
+  };
+  
+  # DCONF settings 
+  dconf.enable = true;
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      accent-color = "slate";
+      color-scheme = "prefer-dark";
+      clock-show-weekday = true;
+    };
+    "org/gnome/desktop/input-sources" = {
+      xkb-options = [ "caps:escape" ];
+    };
+    "org/gnome/desktop/wm/preferences" = {
+      button-layout = "appmenu:minimize,maximize,close";
+    };
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      custom-keybindings = [
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
+      ];
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+      binding = "<Super>t";
+      command = "ptyxis";
+      name = "open-terminal";
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+      binding = "<Super>e";
+      command = "nautilus";
+      name = "open-file-manager";
     };
   };
 }
