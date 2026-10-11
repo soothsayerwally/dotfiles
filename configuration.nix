@@ -16,6 +16,10 @@
   
   # Sensor support (auto-rotate)
   hardware.sensor.iio.enable = true;
+  
+  # Enable TRIM
+  services.fstrim.enable = true;
+  services.fstrim.interval = "weekly"
 
   # Enable GNOME
   services.xserver.enable = true;
