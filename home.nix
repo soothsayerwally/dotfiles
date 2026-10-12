@@ -18,9 +18,11 @@
     fd
     ptyxis	
     bitwarden-desktop
+    chromium
     obsidian
     calibre
     vesktop
+    edopro
   ];
 
 # Git 
