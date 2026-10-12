@@ -8,12 +8,15 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";		
+      url = "github:0xc000022070/zen-browser-flake";        
       inputs = {
-      # IMPORTANT: To ensure compatibility with the latest Firefox version, use nixpkgs-unstable.
-      nixpkgs.follows = "nixpkgs";
-      home-manager.follows = "home-manager";
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
       };
+    };
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim = {
       url = "github:nix-community/nixvim";
@@ -21,7 +24,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, disko, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, disko, home-manager, antigravity-nix, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -38,6 +41,13 @@
           };
           
           home-manager.users.krishang = import ./home.nix;
+        }
+        {
+          environment.systemPackages = [
+            antigravity-nix.packages.x86_64-linux.default # Slop Slop Slop Sahur
+            antigravity-nix.packages.x86_64-linux.google-antigravity-ide
+            antigravity-nix.packages.x86_64-linux.google-antigravity-cli  
+          ];
         }
       ];
     };
