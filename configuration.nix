@@ -74,6 +74,7 @@
     gnome-extension-manager
     cloudflare-warp
     morewaita-icon-theme
+    vscode.fhs
     curl
     devenv
   ] ++ (with pkgs.gnomeExtensions; [
