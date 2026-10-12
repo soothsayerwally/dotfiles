@@ -133,6 +133,13 @@
     configDir = "/home/krishang/.config/syncthing";
   };
 
+  # Direnv
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+  };
+
+
 
   system.stateVersion = "26.05";
 }
