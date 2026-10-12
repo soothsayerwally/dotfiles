@@ -1,5 +1,20 @@
 { config, pkgs, ... }:
 
+# Music Prod Shenanigans
+let
+  # Grab the specific Wine Staging 9.21 package maintained for Yabridge.
+  wineStaging921 = pkgs.wineWowPackages.yabridge;
+
+  # Override yabridge and yabridgectl to hardcode their dependency to 9.21.
+  my-yabridge = pkgs.yabridge.override {
+    wine = wineStaging921;
+  };
+
+  my-yabridgectl = pkgs.yabridgectl.override {
+    wine = wineStaging921;
+  };
+in
+
 {
   imports = [ 
     ./hardware-configuration.nix 
@@ -68,6 +83,7 @@
   services.cloudflare-warp.enable = true;
 
   environment.systemPackages = with pkgs; [
+    # Stuff
     git
     vim
     wget
@@ -77,6 +93,22 @@
     vscode.fhs
     curl
     devenv
+
+    # DAW
+    reaper
+
+    # Windows VST Bridging
+    my-yabridge
+    my-yabridgectl
+
+    # Open Source Native Linux VSTs / Audio Plugins
+    surge-XT          # Powerful hybrid synthesizer
+    lsp-plugins       # Excellent suite of mixing/mastering plugins
+    dragonfly-reverb  # High-quality reverb and hall algorithms
+    dexed             # Famous DX7 FM synth clone
+    calf              # Calf Studio Gear suite
+    odin2             # Flexible semi-modular synthesizer
+    distrho-ports     # Collection of ported FOSS plugins
   ] ++ (with pkgs.gnomeExtensions; [
     hot-edge
     caffeine
