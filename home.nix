@@ -22,6 +22,7 @@
     obsidian
     calibre
     vesktop
+    cine
     edopro
   ];
 
