@@ -21,6 +21,7 @@
     chromium
     obsidian
     calibre
+    handbrake
     vesktop
     cine
     edopro
