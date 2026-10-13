@@ -100,7 +100,7 @@
     vscode.fhs
     curl
     devenv
-    wl-cipboard
+    wl-clipboard
 
     # DAW
     reaper
