@@ -100,18 +100,10 @@
     vscode.fhs
     curl
     devenv
+    wl-cipboard
 
     # DAW
     reaper
-
-    # Open Source Native Linux VSTs / Audio Plugins
-    surge-XT          # Powerful hybrid synthesizer
-    lsp-plugins       # Excellent suite of mixing/mastering plugins
-    dragonfly-reverb  # High-quality reverb and hall algorithms
-    dexed             # Famous DX7 FM synth clone
-    calf              # Calf Studio Gear suite
-    odin2             # Flexible semi-modular synthesizer
-    distrho-ports     # Collection of ported FOSS plugins
 
   ] ++ (with pkgs.gnomeExtensions; [
     hot-edge
