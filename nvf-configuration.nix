@@ -73,11 +73,11 @@
 
       # LSP 
       "gd" = {
-        action = "<cmd>Telescope lsp-definitions<CR>";
+        action = "<cmd>Telescope lsp_definitions<CR>";
         desc = "Go to Definition";
       };
       "gr" = {
-        action = "<cmd>Telescope lsp-references<CR>";
+        action = "<cmd>Telescope lsp_references<CR>";
         desc = "Find References";
       };
       "<leader>rn" = {
