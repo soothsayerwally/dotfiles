@@ -28,10 +28,10 @@
   ];
 
 # Git 
-  programs.git = {
+  programs.git.settings = {
     enable = true;
-    userName = "Krishang";
-    userEmail = "krishangnayanbhagwati@gmail.com";
+    user.name = "Krishang";
+    user.email = "krishangnayanbhagwati@gmail.com";
   };
 
 # Zen Browser
