@@ -37,9 +37,18 @@
       enableTreesitter = true;
       enableFormat = true;
 
-      nix.enable = true;
-      python.enable = true;
-      rust.enable = true;
+      nix = {
+        enable = true;
+        lsp.enable = true;
+      };
+      python = {
+        enable = true;
+        lsp.enable = true;
+      };
+      rust = {
+        enable = true;
+        lsp.enable = true;
+      };
     };
 
     # Shortcuts
