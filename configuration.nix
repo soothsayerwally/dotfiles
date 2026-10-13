@@ -29,7 +29,23 @@
     automatic = true;
     dates = "weekly";
     options = "--delete-older-than 14d";
-  }; 
+  };
+  
+  # Graphics stuff
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true; 
+    extraPackages = with pkgs; [
+      intel-media-driver 
+      vpl-gpu-rt         
+    ];
+    extraPackages32 = with pkgs.pkgsi686Linux; [ intel-media-driver ];
+  };
+
+  # Force Wayland/Chromium/Firefox to use the correct Intel VAAPI driver
+  environment.sessionVariables = { 
+    LIBVA_DRIVER_NAME = "iHD"; 
+  };
 
   # Enable GNOME
   services.xserver.enable = true;
