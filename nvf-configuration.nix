@@ -49,6 +49,10 @@
         enable = true;
         lsp.enable = true;
       };
+      clang = {
+        enable = true;
+        lsp.enable = true;
+      };
     };
 
     # Shortcuts
