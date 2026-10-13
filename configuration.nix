@@ -24,6 +24,13 @@
   services.fstrim.enable = true;
   services.fstrim.interval = "weekly";
 
+  # Garbage Collection
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 14d";
+  }; 
+
   # Enable GNOME
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
