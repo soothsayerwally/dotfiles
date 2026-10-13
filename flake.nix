@@ -41,7 +41,6 @@
         disko.nixosModules.disko
         ./disko-config.nix
         ./configuration.nix
-        nvf.nixosModules.default
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
@@ -55,6 +54,8 @@
         }
         {
           environment.systemPackages = [
+	    self.packages."x86_64-linux".default
+
             antigravity-nix.packages.x86_64-linux.default # Slop Slop Slop Sahur
             antigravity-nix.packages.x86_64-linux.google-antigravity-ide
             antigravity-nix.packages.x86_64-linux.google-antigravity-cli  
