@@ -27,14 +27,16 @@
     edopro
   ];
 
-# Git 
-  programs.git.settings = {
+  # Git 
+  programs.git = {
     enable = true;
-    user.name = "Krishang";
-    user.email = "krishangnayanbhagwati@gmail.com";
+    settings.user = {
+      name = "Krishang";
+      email = "krishangnayanbhagwati@gmail.com";
+    };
   };
 
-# Zen Browser
+  # Zen Browser
   programs.zen-browser = {
     enable = true;
     setAsDefaultBrowser = true;
@@ -44,7 +46,7 @@
     ];
   };
 
-# Fish
+  # Fish
   programs.fish = {
     enable = true;
     
@@ -81,12 +83,12 @@
     ];
   };
 
-# Ptyxis (Terminal)
+  # Ptyxis (Terminal)
   programs.ptyxis = {
     enable = true;
   };
   
-# GTK theme
+  # GTK theme
   gtk = {
     enable = true;
     theme = {
@@ -166,7 +168,7 @@
     };
   };
 
-# Configure ssh to use https ports for git
+  # Configure ssh to use https ports for git
   programs.ssh.matchBlocks = {
     "github.com" = {
       hostname = "ssh.github.com";
