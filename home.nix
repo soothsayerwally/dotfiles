@@ -51,10 +51,12 @@
     enable = true;
     enableBashIntegration = true;
     enableFishIntegration = true;
+    exitShellOnExit = true;
+
 
   settings = {
     theme = "catppuccin-mocha";
-    default_layout = "compact";
+    # default_layout = "compact";
   };
 };
 
