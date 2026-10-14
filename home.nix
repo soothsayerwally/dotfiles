@@ -46,6 +46,18 @@
     ];
   };
 
+  # Zellij 
+  programs.zellij = {
+    enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+
+  settings = {
+    theme = "default";
+    default_layout = "compact";
+  };
+};
+
   # Fish
   programs.fish = {
     enable = true;
