@@ -16,7 +16,10 @@
     fzf
     ripgrep
     fd
+    yt-dlp
+
     ptyxis	
+
     bitwarden-desktop
     chromium
     obsidian
@@ -25,6 +28,8 @@
     vesktop
     cine
     edopro
+    gimp
+    krita
   ];
 
   # Git 
