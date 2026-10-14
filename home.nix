@@ -53,7 +53,7 @@
     enableFishIntegration = true;
 
   settings = {
-    theme = "default";
+    theme = "catppuccin-macchiato";
     default_layout = "compact";
   };
 };
