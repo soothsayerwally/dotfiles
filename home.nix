@@ -54,7 +54,7 @@
 
   settings = {
     theme = "default";
-    default_layout = "compact";
+    default_layout = "catppuccin-macchiato";
   };
 };
 
