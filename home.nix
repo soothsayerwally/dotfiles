@@ -60,7 +60,7 @@
 
 
   settings = {
-    theme = "catppuccin-mocha";
+    theme = "kanagawa";
     # default_layout = "compact";
   };
 };
