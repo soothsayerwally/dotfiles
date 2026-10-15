@@ -17,6 +17,7 @@
       expandtab = true; # Convert tabs to spaces
       autoindent = true;
       smartindent = true;
+      showmode = false; # Lualine already does this
     };
 
     # Plugins
