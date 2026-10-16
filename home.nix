@@ -31,7 +31,6 @@
     edopro
     gimp
     krita
-    alpaca
   ];
 
   # Git 
