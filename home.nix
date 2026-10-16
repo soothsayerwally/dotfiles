@@ -62,7 +62,8 @@
 
   settings = {
     theme = "kanagawa";
-    # default_layout = "compact";
+    default_layout = "default";
+    pane_frame_style = "full";
   };
 };
 
