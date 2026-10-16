@@ -32,6 +32,16 @@
     autopairs.nvim-autopairs.enable = true;
 
     treesitter.context.enable = true;
+
+    # Diagnostics
+    diagnostics = {
+      enable = true;
+      config = {
+        virtual_text = true;
+        underline = true;
+        signs = true;
+      };
+    };  
     
     # LSP 
     languages = {
