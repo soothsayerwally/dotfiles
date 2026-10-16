@@ -57,7 +57,7 @@
     enable = true;
     enableBashIntegration = true;
     enableFishIntegration = true;
-    exitShellOnExit = true;
+    # exitShellOnExit = true;
 
 
   settings = {
