@@ -17,6 +17,7 @@
     ripgrep
     fd
     yt-dlp
+    superfile
 
     ptyxis	
 
@@ -30,6 +31,7 @@
     edopro
     gimp
     krita
+    alpaca
   ];
 
   # Git 
