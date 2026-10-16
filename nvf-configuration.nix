@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ ... }:
 
 {
   vim = {
@@ -32,6 +32,29 @@
     autopairs.nvim-autopairs.enable = true;
 
     treesitter.context.enable = true;
+
+    # Utilities
+    utility = {
+      guess-indent-nvim = {
+        enable = true;
+        # Optional: Pass custom configuration parameters directly to the Lua setup function
+        setupOpts = {
+          auto_cmd = true;             
+          override_editorconfig = false; 
+          # Exclude specific filetypes 
+          filetype_exclude = [
+            "netrw"
+            "tutor"
+          ];
+          # Exclude specific buftypes 
+          buftype_exclude = [
+            "help"
+            "nofile"
+            "terminal"
+            "prompt"
+          ];
+        };
+      };
 
     # Diagnostics
     diagnostics = {
@@ -84,6 +107,10 @@
       "<leader>fg" = {
         action = "<cmd>Telescope live_grep<CR>";
         desc = "Search Text in Project";
+      };
+      "<leader>fe" = {
+        action = "<cmd>Telescope diagnostics<CR>";
+        desc = "Search for Errors";
       };
 
       # LSP 
