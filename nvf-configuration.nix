@@ -55,6 +55,7 @@
           ];
         };
       };
+    };
 
     # Diagnostics
     diagnostics = {
