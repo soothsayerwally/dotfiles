@@ -31,6 +31,7 @@
     edopro
     gimp
     krita
+    pcsx2
   ];
 
   # Git 
@@ -57,13 +58,13 @@
     enable = true;
     enableBashIntegration = true;
     enableFishIntegration = true;
-    # exitShellOnExit = true;
-
+    exitShellOnExit = false;
 
   settings = {
     theme = "kanagawa";
     default_layout = "default";
     pane_frame_style = "full";
+    show_startup_tips = false;
   };
 };
 
