@@ -18,6 +18,9 @@
     fd
     yt-dlp
     superfile
+    eza
+    bat
+    zoxide
 
     ptyxis	
 
