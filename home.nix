@@ -11,15 +11,12 @@
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
-    git
-    btop
-    fzf
     ripgrep
     fd
+    lazygit
     yt-dlp
-    superfile
+    yazi
     bat
-    zoxide
 
     ptyxis	
 
@@ -35,6 +32,72 @@
     krita
     pcsx2
   ];
+
+
+  # nh: nix helper
+  programs.nh = {
+    enable = true;
+    clean.enable = false; # handled by nix.gc in configuration.nix
+    flake = "/home/krishang/dotfiles";
+  };
+
+  # zoxide: cooler cd 
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+    options = [ "--cmd cd" ]; # Replaces cd directly with zoxide ('cdi` for interactive fzf jump)
+  };
+
+  # atuin: fuzzy shell history
+  programs.atuin = {
+    enable = true;
+    enableFishIntegration = true;
+    flags = [ "--disable-up-arrow" ]; 
+    settings = {
+      auto_sync = false; # lets keep it local 
+      search_mode = "fuzzy";
+      filter_mode_shell_up_key_binding = "directory";
+      style = "compact";
+      inline_height = 20;
+    };
+  };
+
+  # yazi: terminal file manager
+  programs.yazi = {
+    enable = true;
+    enableFishIntegration = true;
+    shellWrapperName = "y"; # Press `y` to browse, `q` to quit AND change working directory to where you landed!
+    settings = {
+      manager = {
+        show_hidden = false;
+        sort_by = "natural";
+        sort_dir_first = true;
+      };
+    };
+  };
+
+  # bat + bat-Extras 
+  programs.bat = {
+    enable = true;
+    config = {
+      theme = "kanagawa"; 
+      style = "numbers,changes,header";
+    };
+    extraPackages = with pkgs.bat-extras; [
+      batman   
+      batgrep  
+      batdiff  
+    ];
+  };
+    
+  # btop: cooler htop
+  programs.btop = {
+    enable = true;
+    settings = {
+      color_theme = "kanagawa";
+      vim_keys = true;
+    };
+  };
 
   # Git 
   programs.git = {
