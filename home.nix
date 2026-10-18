@@ -18,7 +18,6 @@
     fd
     yt-dlp
     superfile
-    eza
     bat
     zoxide
 
@@ -105,6 +104,18 @@
       	name = "done";
 	src = pkgs.fishPlugins.done.src;
       }
+    ];
+  };
+
+  # eza
+  programs.eza = {
+    enable = true;
+    enableFishIntegration = true; # Automatically creates ls, ll, la, lla, lt
+    icons = "auto";
+    git = true;
+    extraOptions = [
+      "--group-directories-first"
+      "--color=always"
     ];
   };
 
