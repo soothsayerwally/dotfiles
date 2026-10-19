@@ -110,10 +110,10 @@
   ]);
   
   # Enable the Nautilus "Open Any Terminal" extension globally
-  programs.nautilus-open-any-terminal = {
-    enable = true;
-    terminal = "ghostty"; 
-  };
+  # programs.nautilus-open-any-terminal = {
+  #  enable = true;
+  #  terminal = "ghostty"; 
+  #};
 
   programs.fish.enable = true;
   
@@ -145,12 +145,6 @@
     openDefaultPorts = true; # Open ports in the firewall for Syncthing. (!NOTE: this will not open syncthing gui port)
     user = "krishang";
     configDir = "/home/krishang/.config/syncthing";
-  };
-
-  # Direnv
-  programs.direnv = {
-    enable = true;
-    nix-direnv.enable = true;
   };
 
   # Enable flakes and nix-command

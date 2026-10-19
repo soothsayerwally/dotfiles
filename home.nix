@@ -15,7 +15,6 @@
     fd
     lazygit
     yt-dlp
-    yazi
     bat
 
     bitwarden-desktop
@@ -37,6 +36,11 @@
     enable = true;
     clean.enable = false; # handled by nix.gc in configuration.nix
     flake = "/home/krishang/dotfiles";
+  };
+
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
   };
 
   # zoxide: cooler cd 
@@ -72,13 +76,18 @@
         sort_dir_first = true;
       };
     };
+    theme = {
+      flavor = {
+        dark = "kanagawa-wave";
+      };
+    };
   };
 
   # bat + bat-Extras 
   programs.bat = {
     enable = true;
     config = {
-      theme = "kanagawa"; 
+      theme = "ansi"; 
       style = "numbers,changes,header";
     };
     extraPackages = with pkgs.bat-extras; [
@@ -138,8 +147,21 @@
     # shell aliases
     shellAliases = {
       l = "ls -la";
-      g = "git";
       v = "nvim";
+      cat = "bat --paging=never";
+      catp = "bat --plain --paging=never";
+      man = "batman";
+      bgrep = "batgrep";
+    };
+
+    # shell abbreviations
+    shellAbbrs = {
+      g = "git";
+      ga = "git add";
+      gc = "git commit";
+      gp = "git push";
+      gs = "git status -sb";
+      lzg = "lazygit";
     };
 
     # Run code on interactive shell initialization
@@ -154,16 +176,20 @@
         src = pkgs.fishPlugins.fzf-fish.src;
       }
       {
-        name = "hydro";
-        src = pkgs.fishPlugins.hydro.src;
-      }
-      {
       	name = "pure";
-	src = pkgs.fishPlugins.pure.src;
+	      src = pkgs.fishPlugins.pure.src;
       }
       {
       	name = "done";
-	src = pkgs.fishPlugins.done.src;
+	      src = pkgs.fishPlugins.done.src;
+      }
+      {
+        name = "autopair";
+        src = pkgs.fishPlugins.autopair.src;
+      }
+      {
+        name = "sponge"; # keep failed commands out of history
+        src = pkgs.fishPlugins.sponge.src;
       }
     ];
   };
