@@ -189,7 +189,7 @@
     settings = {
       theme = "Kanagawa Wave";
       font-family = "AdwaitaMono Nerd Font";
-      font-size = 11;
+      font-size = 10;
 
       window-decoration = true;
       gtk-titlebar = true;
