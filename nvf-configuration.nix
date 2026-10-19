@@ -18,13 +18,9 @@
 
     # Visuals
     visuals = {
-      vim-web-devicons.enable = true;
-      indent-blankline = {
-        enable = true;
-        fillChar = "";
-        eolChar = "";
-        scope.enabled = true;
-      };
+      nvim-web-devicons.enable = true;
+      indent-blankline.enable = true;
+      
       fidget-nvim.enable = true; # lsp progress spinner
     };
 
