@@ -18,8 +18,6 @@
     yazi
     bat
 
-    ptyxis	
-
     bitwarden-desktop
     chromium
     obsidian
@@ -182,9 +180,27 @@
     ];
   };
 
-  # Ptyxis (Terminal)
-  programs.ptyxis = {
+  # Ghostty (Terminal)
+    programs.ghostty = {
     enable = true;
+    enableFishIntegration = true;
+    installBatSyntax = true; 
+
+    settings = {
+      theme = "Kanagawa Wave";
+      font-family = "AdwaitaMono Nerd Font";
+      font-size = 11;
+
+      window-decoration = true;
+      gtk-titlebar = true;
+      gtk-single-instance = true; # faster window spawning 
+      window-padding-x = 8;
+      window-padding-y = 8;
+
+      copy-on-select = "clipboard";
+      confirm-close-surface = false;
+      mouse-hide-while-typing = true;
+    };
   };
   
   # GTK theme
@@ -261,7 +277,7 @@
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>t";
-      command = "ptyxis";
+      command = "ghostty";
       name = "open-terminal";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
