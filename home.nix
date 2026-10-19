@@ -226,6 +226,7 @@
       copy-on-select = "clipboard";
       confirm-close-surface = false;
       mouse-hide-while-typing = true;
+      window-save-state = "always";
     };
   };
   
