@@ -10,6 +10,24 @@
       style = "wave";
     };
 
+    clipboard = {
+      enable = true;
+      registers = "unnamedplus";
+      providers.wl-copy.enable = true;
+    };
+
+    # Visuals
+    visuals = {
+      vim-web-devicons.enable = true;
+      indent-blankline = {
+        enable = true;
+        fillChar = "";
+        eolChar = "";
+        scope.enabled = true;
+      };
+      fidget-nvim.enable = true; # lsp progress spinner
+    };
+
     # Options
     options = {
       tabstop = 4;
@@ -33,6 +51,9 @@
 
     treesitter.context.enable = true;
 
+    notify.nvim-notify.enable = true;
+    notes.todo-comments.enable = true;
+
     # Utilities
     utility = {
       guess-indent-nvim = {
@@ -55,6 +76,7 @@
           ];
         };
       };
+      surround.enable = true; # (ys, cs, ds);
     };
 
     # Diagnostics
