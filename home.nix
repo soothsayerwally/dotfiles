@@ -4,6 +4,7 @@
 {
   imports = [
     inputs.zen-browser.homeModules.beta
+    inputs.reaper-flake.homeModules.reaper
   ];
 
   home.username = "krishang";
@@ -277,6 +278,16 @@
         "browser.newtabpage.activity-stream.enabled" = false;
       };
     };
+  };
+
+  # Reaper
+  programs.reaper = {
+    enable = true;
+
+    packages = with pkgs; [
+      freetype 
+      fontconfig
+    ];
   };
   
   # DCONF settings 

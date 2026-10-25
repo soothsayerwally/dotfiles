@@ -24,6 +24,11 @@
     };
 
     nvf.url = "github:notashelf/nvf";
+
+    reaper-flake = {
+      url = "github:9Prestidigitator/reaper-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, disko, home-manager, antigravity-nix, nvf, ... }@inputs: {

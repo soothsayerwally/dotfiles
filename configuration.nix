@@ -76,6 +76,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    jack.enable = true;
   };
 
   users.users.krishang = {
@@ -100,9 +101,19 @@
     curl
     devenv
     wl-clipboard
+  
 
-    # DAW
-    reaper
+    # Plugins 
+    vital             # Synth 
+    surge-XT          # Synth 
+    odin2             # Synth 
+    cardinal          # synth 
+    lsp-plugins       # Suite of mixing/mastering plugins
+    x42-plugins       # EQ, meters, and utilities
+    dragonfly-reverb  # Reverb plugins
+    chow-tape-model   # Analog tape saturation
+    yabridge          # bridge Windows VSTs via Wine
+    yabridgectl       # CLI to manage yabridge
 
   ] ++ (with pkgs.gnomeExtensions; [
     hot-edge
