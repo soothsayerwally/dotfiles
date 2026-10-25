@@ -28,6 +28,7 @@
     gimp
     krita
     pcsx2
+    super-productivity
   ];
 
 
