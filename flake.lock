@@ -57,6 +57,27 @@
         "url": "https://git.lix.systems/lix-project/flake-compat.git"
       }
     },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "reaper-flake",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790898470,
+        "narHash": "sha256-zTwuwezD0w3hpga6a6P8emidzAZFyWqlNeRBlpWOOl8=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "024633cd702b10285db5cb19b40ad48d2399ba60",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -159,6 +180,27 @@
         "type": "github"
       }
     },
+    "reaper-flake": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792446965,
+        "narHash": "sha256-jVM7AyZYVtsXy2BE6Gld+fF9vdAkC9m4z9DesSyMow8=",
+        "owner": "9Prestidigitator",
+        "repo": "reaper-flake",
+        "rev": "a05ee148c2ebef1ab977a837ed93d5116dfbbced",
+        "type": "github"
+      },
+      "original": {
+        "owner": "9Prestidigitator",
+        "repo": "reaper-flake",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "antigravity-nix": "antigravity-nix",
@@ -166,6 +208,7 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nvf": "nvf",
+        "reaper-flake": "reaper-flake",
         "zen-browser": "zen-browser"
       }
     },
