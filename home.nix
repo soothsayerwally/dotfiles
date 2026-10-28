@@ -30,6 +30,7 @@
     krita
     pcsx2
     super-productivity
+    bottles
   ];
 
 

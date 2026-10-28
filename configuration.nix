@@ -112,7 +112,6 @@
     zynaddsubfx       # Synth
     geonkick          # Precussion
     hydrogen          # Drum mahcine
-    chowtape          # Tape saturation
     lsp-plugins       # Suite of mixing/mastering plugins
     x42-plugins       # EQ, meters, and utilities
     dragonfly-reverb  # Reverb plugins
