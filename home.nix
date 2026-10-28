@@ -30,7 +30,7 @@
     krita
     pcsx2
     super-productivity
-    bottles
+    (bottles.override { removeWarningPopup = true; })
   ];
 
 
